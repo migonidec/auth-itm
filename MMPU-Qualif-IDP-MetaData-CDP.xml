@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityDescriptor entityID="http://auth-iam-qualif.mousquetaires.com/trust/cdp" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:query="urn:oasis:names:tc:SAML:metadata:ext:query" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:x509qry="urn:oasis:names:tc:SAML:metadata:X509:query" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+
+                
+                
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDWDCCAkACCQC/zlg26Y/iMDANBgkqhkiG9w0BAQsFADBuMQswCQYDVQQGEwJGUjEOMAwGA1UE
+CAwFOTIwMDAxEjAQBgNVBAcMCUNoYXRpbGxvbjEOMAwGA1UECgwFU1RJTUUxEjAQBgNVBAsMCVNU
+SU1FIElBTTEXMBUGA1UEAwwOZmVkZXJhdGlvbi11YXQwHhcNMjAwNzA4MTI0OTU4WhcNMzAwNzA2
+MTI0OTU4WjBuMQswCQYDVQQGEwJGUjEOMAwGA1UECAwFOTIwMDAxEjAQBgNVBAcMCUNoYXRpbGxv
+bjEOMAwGA1UECgwFU1RJTUUxEjAQBgNVBAsMCVNUSU1FIElBTTEXMBUGA1UEAwwOZmVkZXJhdGlv
+bi11YXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVIgQ18mU8sJZNtChPvMH2DKkH
+m28u6wxzDGRePgE/QDdJ4/FbcYOgEFvY1KrG3KgHGfy9YyUC6j7P8tqp29K9A9iSd/KxyloV9mgL
+gkp427P+/mxYeXF8Jt4kvP1loaMp+Blrc1J7wnwhV16bnMI4d0U7ydQ879b8m49ktatH74QoixNc
+73bizlJTOntqJMtHCavbsePxsKZjxwo2501uKJjtPv2WaONsZU/7ohSBjzZQm+mpeXrfDMhr7eqj
+8Eupims7UuPCnPo/rvjNRlUO2QOubx0cLvOfxI1aGHCSNDi6k/kq0BRmyR146+IGw+JgOl9EeEJE
+Ddm9Px9PJuy9AgMBAAEwDQYJKoZIhvcNAQELBQADggEBACo7anV2/LLd982SWhPMc50l496unYrc
+nTE/883/Zpub+lCB8BLZgFKuVPCYx47AKzhUIfNSmU+I1rs9WjO8IokbzHLeFyhOt5pHl2w581nt
+9oQjVXmhX4cznige3dklv3uPBPhI1l+2vBWQkxmxlq45LsNJbqo3KAQJhr7OibeTG9ctxqHgbCwu
+SBIsNWkkjUz4NOopxm7G0+Mnite4jA+aHmB56fS7kzhuz5GiG2dw0OnA8hVryhodT+CvnmHhs3fM
+0OMybBrdUV3XBah8NwTxJiaVfsQSbEzjVPlU10kiA/X2XeKTg+4qRsJFXozryNghxrXReyfa/V+b
+0QSqjwo=
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <ArtifactResolutionService index="0" isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/ArtifactResolver/metaAlias/mousquetaires/idp5"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPSloPOST/metaAlias/mousquetaires/idp5" ResponseLocation="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPSloPOST/metaAlias/mousquetaires/idp5"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPSloRedirect/metaAlias/mousquetaires/idp5" ResponseLocation="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPSloRedirect/metaAlias/mousquetaires/idp5"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPSloSoap/metaAlias/mousquetaires/idp5"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPMniPOST/metaAlias/mousquetaires/idp5" ResponseLocation="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPMniPOST/metaAlias/mousquetaires/idp5"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPMniRedirect/metaAlias/mousquetaires/idp5" ResponseLocation="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPMniRedirect/metaAlias/mousquetaires/idp5"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/IDPMniSoap/metaAlias/mousquetaires/idp5"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/SSORedirect/metaAlias/mousquetaires/idp5"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/SSOPOST/metaAlias/mousquetaires/idp5"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/SSOSoap/metaAlias/mousquetaires/idp5"/>
+        <NameIDMappingService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://auth-iam-qualif.mousquetaires.com:443/openam/NIMSoap/metaAlias/mousquetaires/idp5"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://auth-iam-qualif.mousquetaires.com:80/openam/AIDReqSoap/IDPRole/metaAlias/mousquetaires/idp5"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:URI" Location="http://auth-iam-qualif.mousquetaires.com:80/openam/AIDReqUri/IDPRole/metaAlias/mousquetaires/idp5"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
